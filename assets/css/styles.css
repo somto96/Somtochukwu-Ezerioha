@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#fullpage {
+    height: 100vh;
+    overflow: hidden;
+}
+
+#fullpage section {
+    height: 100vh;
+}
+
+
+#fullpage section .uk-navbar-nav li a {
+    color: #fff;
+}
+
+
+#fullpage section .uk-navbar-nav li a:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    font-weight:bold;
+}
+
+#fullpage section h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 100vh;
+    font-size: 10em;
+    text-transform: uppercase;
+}
+
+#fullpage section:nth-child(1) {
+    background-image: url("/assets/img/macbook_pro.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#fullpage section:nth-child(2) {
+    background: #ff0;
+}
+
+#fullpage section:nth-child(3) {
+    background: #0ff;
+}
+
+#fullpage section:nth-child(4) {
+    background: #f0f;
+}
+#fullpage section:nth-child(5) {
+    background: #f00;
+}
+
+#home nav div ul .brand{
+    display: flex;
+}
+#home nav div ul .brand span{
+    flex-flow: row;
+    padding: 10px 20px;
+}
+#home nav div ul .brand span img{
+    width: auto;
+    height: 75px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+#home nav div ul .brand h6{
+    color:#fff;
+    font-weight: bold;
+}

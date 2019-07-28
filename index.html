@@ -1,107 +1,71 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Ezerioha's Personal Site</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-        <script src="js/main.js"></script>
-    </head>
-    <body>
-        <table cellspacing='10px'>
-            <tr>
-                <td><img src="img/alex-iby-2.png" alt="Ezerioha profile picture"></td>
-                <td>
-                    <h1>Ezerioha Somtochukwu Emmanuel</h1>
-                    <p><em>Web Developer/ Corper at <strong><a href="https://www.arnergy.com">Arnergy Solar</a></strong></em></p>
-                    <p>I am a Web Developer, an aspring Data Scientist/ Machine learning Engineer. I am a focused and motivated individual with a vision and desire to excel in the
-                        Information Technology industry. 
-                    </p>
-                </td>
-            </tr>
-        </table>
-        <hr>
-        <h3>Books read</h3>
-        <ul>
-            <li>Art of War</li>
-            <li>Think Big</li>
-            <li>Finish Strong</li>
-            <li>48 laws of power</li>
-        </ul>
-        <hr>
-        <h3>Work Experience</h3>
-        <table cellspacing= '10px'>
-            <thead>
-                <tr>
-                    <th>Dates</th>
-                    <th>Work</th>
-                </tr>   
-            </thead>
-            <tbody>
-                <tr>
-                    <td>2013</td>
-                    <td>Computer Trainee at Business Value Consulting</td>
-                </tr>
-                <tr>
-                    <td>2014</td>
-                    <td>Trainee Technician at Toptech Engineering Limited</td>
-                </tr>
-                <tr>
-                    <td>2016</td>
-                    <td>Web developer/Intern at Business Value Consulting</td>
-                </tr>
-                <tr>
-                    <td>2018 - Present</td>
-                    <td>Web Developer/Corper at Arnergy Solar Limited</td>
-                </tr>
-            </tbody>
-            <tfoot>
+<html lang="en">
 
-            </tfoot>      
-        </table>
-        <hr>
-        <h3>Skills</h3>
-        <table cellspacing= '10px'>
-            <tr>
-                <td>
-                    <table>
-                        <tr>
-                            <td>HTML5</td>
-                            <td>🎇🎇🎇🎇🎇</td>
-                        </tr>
-                        <tr>
-                            <td>JavaScript</td>
-                            <td>🎇🎇🎇🎇</td>
-                        </tr>
-                        <tr>
-                            <td>Bootstrap</td>
-                            <td>🎇🎇🎇🎇🎇</td>
-                        </tr>
-                    </table>
-                </td>
-                <td>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>Python</td>
-                                <td>🎇🎇🎇🎇</td>
-                            </tr>
-                            <tr>
-                                <td>PHP</td>
-                                <td>🎇🎇🎇</td>
-                            </tr>
-                            <tr>
-                                <td>MySQL</td>
-                                <td>🎇🎇🎇🎇</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </table>
-        <hr>
-        <a href="hobbies.html">My Hobbies</a>
-        <a href="contact-me.html">Contact Me</a>
-    </body>
-</html> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Somtochukwu Ezerioha</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="/assets/js/jquery.fullpage.js"></script>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit-icons.min.js"></script>
+
+</head>
+
+<body>
+    <div id="fullpage">
+        <section id="home">
+        
+            <nav class="uk-navbar-transparent" uk-navbar>
+                <div class="uk-navbar-left">
+
+                    <ul class="uk-navbar-nav">
+                        <li class="brand">
+                            <span>
+                                <img class="profile_pic" src="/assets/img/alex-iby-2.png" alt="Somtochukwu profile picture">
+                            </span>
+                            <h6>Somtochukwu Ezerioha</h6>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="uk-navbar-right">
+
+                    <ul class="uk-navbar-nav">
+                        <li><a href="#">About Me</a></li>
+                        <li><a href="#">Porfolio</a></li>
+                        <li><a href="#">Skill Stats</a></li>
+                    </ul>
+
+                </div>
+
+            </nav>
+            <!-- <a href="#about_me"><span></span></a> -->
+        </section>
+        <section id="about_me">
+            <h1>Section 2</h1>
+        </section>
+        <section id="skill_stats">
+            <h1>Section 3</h1>
+        </section>
+        <section id="portfolio">
+            <h1>Section 4</h1>
+        </section>
+        <section id="hire_me">
+            <h1>Section 5</h1>
+        </section>
+    </div>
+    <script type="text/javascript">
+        $('#fullpage').fullpage();
+    </script>
+</body>
+
+</html>
