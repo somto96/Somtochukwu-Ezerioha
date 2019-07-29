@@ -1,77 +1,176 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
+/* General styles for webpage layout (including sections) */
 #fullpage {
-    height: 100vh;
-    overflow: hidden;
+  height: 100vh;
+  overflow: hidden;
 }
 
 #fullpage section {
-    height: 100vh;
+  height: 100vh;
 }
-
 
 #fullpage section .uk-navbar-nav li a {
-    color: #fff;
+  color: #fff;
 }
-
 
 #fullpage section .uk-navbar-nav li a:hover {
-    color: #fff;
-    border-bottom: 1px solid #fff;
-    font-weight:bold;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  font-weight: bold;
 }
-
+/* 
 #fullpage section h1 {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    line-height: 100vh;
-    font-size: 10em;
-    text-transform: uppercase;
-}
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 100vh;
+  font-size: 10em;
+  text-transform: uppercase;
+} */
 
 #fullpage section:nth-child(1) {
-    background-image: url("../img/macbook_pro.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+  background-image: url("../img/macbook_pro.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 #fullpage section:nth-child(2) {
-    background: #ff0;
+  background: #ff0;
 }
 
 #fullpage section:nth-child(3) {
-    background: #0ff;
+  background: #0ff;
 }
 
 #fullpage section:nth-child(4) {
-    background: #f0f;
+  background: #f0f;
 }
 #fullpage section:nth-child(5) {
-    background: #f00;
+  background: #f00;
 }
+
+
+/* Code for home section */
 
 #home nav div ul .brand{
-    display: flex;
-}
-#home nav div ul .brand span{
-    flex-flow: row;
-    padding: 10px 20px;
-}
-#home nav div ul .brand span img{
-    width: auto;
-    height: 75px;
-    border-radius: 50%;
-    border: 2px solid #fff;
+  color: #fff;
+  font-weight: 600;
+  font-style: italic;
+  padding: 10px 20px;
 }
 
-#home nav div ul .brand h6{
-    color:#fff;
-    font-weight: bold;
+#home .scroll {
+  padding-top: 60px;
+}
+#home a span {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+#home a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+#home a span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: "";
+  width: 44px;
+  height: 44px;
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-animation: sdb03 3s infinite;
+  animation: sdb03 3s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#home nav .uk-navbar-right .uk-navbar-toggle svg rect{
+    fill: #fff;
+}
+
+ 
+.uk-nav-header {
+    padding: 5px 0 !important;
+    text-transform: none !important;
+    font-size: .875rem !important;
+}
+
+#home div#offcanvas-flip .uk-offcanvas-bar .uk-nav .social-icons
+{
+    display: flex;
+    justify-content: right;
+}
+
+.social-icons span a i.fab
+{
+    font-size: 20px !important;
+}
+
+#home .hero-text-box {
+    position: absolute;
+    /* width: 1140px; */
+    top: 150px;
+    left: 150px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#home .hero-text-box h1{
+    color: #fff;
 }
