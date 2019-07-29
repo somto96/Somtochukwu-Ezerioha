@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Somtochukwu Ezerioha</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="/assets/js/jquery.fullpage.js"></script>
+    <script src="assets/js/jquery.fullpage.js"></script>
+    <script src="assets/js/scroll.js"></script>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i&display=swap" rel="stylesheet"> 
+
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/css/uikit.min.css" />
 
@@ -16,41 +21,85 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit-icons.min.js"></script>
 
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/5709c233d4.js"></script>
+
 </head>
 
 <body>
     <div id="fullpage">
         <section id="home">
-        
-            <nav class="uk-navbar-transparent" uk-navbar>
+            <nav class="uk-navbar-transparent " uk-navbar>
                 <div class="uk-navbar-left">
-
                     <ul class="uk-navbar-nav">
                         <li class="brand">
-                            <span>
-                                <img class="profile_pic" src="/assets/img/alex-iby-2.png" alt="Somtochukwu profile picture">
-                            </span>
-                            <h6>Somtochukwu Ezerioha</h6>
+                            Somtochukwu Ezerioha
                         </li>
-
                     </ul>
-
                 </div>
-
                 <div class="uk-navbar-right">
+                    <a href="#" class="uk-navbar-toggle" uk-toggle="target: #offcanvas-flip">
+                        <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                            data-svg="navbar-toggle-icon">
+                            <rect y="9" width="20" height="2"></rect>
+                            <rect y="3" width="20" height="2"></rect>
+                            <rect y="15" width="20" height="2"></rect>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
 
-                    <ul class="uk-navbar-nav">
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#">Porfolio</a></li>
-                        <li><a href="#">Skill Stats</a></li>
+            <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+                <div class="uk-offcanvas-bar">
+
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <ul class="uk-nav uk-nav-default">
+
+                        <li class="uk-nav-header">MENU</li>
+                        <li><a href="#about_me">About Me</a></li>
+                        <li><a href="#skill_stats">Skill Stats</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li>
+                            <a class="uk-button uk-button-default uk-width-1-2 uk-margin" href="#hire_me"> Hire Me!</a>
+                        </li>
+                        <li class="uk-nav-divider"></li>
+                        <li class="uk-nav-header">Connect with me!</li>
+                        <div class="social-icons ">
+                            <span>
+                                <a href="#" class="uk-margin-right linked-in">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="#" class="uk-margin-right github">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </span>
+                            <span>
+                                <a href="#" class="medium">
+                                    <i class="fab fa-medium"></i>
+                                </a>
+                            </span>
+                        </div>
                     </ul>
 
-                </div>
 
-            </nav>
-            <!-- <a href="#about_me"><span></span></a> -->
+
+                </div>
+            </div>
+            <div class="hero-text-box">
+                <h1>Hi I'm Somto<br></h1>
+            </div>
+
+            <!-- Scroll down button -->
+            <a class="scroll" href="#section04"><span></span></a>
+
+
+
+
         </section>
-        <section id="about_me">
+        <!-- <section id="about_me">
             <h1>Section 2</h1>
         </section>
         <section id="skill_stats">
@@ -61,7 +110,7 @@
         </section>
         <section id="hire_me">
             <h1>Section 5</h1>
-        </section>
+        </section> -->
     </div>
     <script type="text/javascript">
         $('#fullpage').fullpage();
