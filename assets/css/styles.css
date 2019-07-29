@@ -35,7 +35,7 @@ body {
 }
 
 #fullpage section:nth-child(1) {
-    background-image: url("/assets/img/macbook_pro.jpg");
+    background-image: url("../img/macbook_pro.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
