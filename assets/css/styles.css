@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 /* General styles for webpage layout (including sections) */
@@ -42,7 +42,7 @@ body {
 }
 
 #fullpage section:nth-child(2) {
-  background: #ff0;
+  background: #fff;
 }
 
 #fullpage section:nth-child(3) {
@@ -56,22 +56,22 @@ body {
   background: #f00;
 }
 
-
 /* Code for home section */
 
-#home nav div ul .brand{
+#home nav div ul .brand {
   color: #fff;
-  font-weight: 600;
+  font-size: 30px;
   font-style: italic;
   padding: 10px 20px;
+  font-family: "Satisfy", cursive;
 }
 
 #home .scroll {
-  padding-top: 60px;
+  padding-top: 50px;
 }
 #home a span {
   position: absolute;
-  bottom: 50px;
+  bottom: 150px;
   left: 50%;
   width: 46px;
   height: 46px;
@@ -140,37 +140,143 @@ body {
   }
 }
 
-#home nav .uk-navbar-right .uk-navbar-toggle svg rect{
-    fill: #fff;
+#home nav .uk-navbar-right .uk-navbar-toggle svg rect {
+  fill: #fff;
 }
 
- 
 .uk-nav-header {
-    padding: 5px 0 !important;
-    text-transform: none !important;
-    font-size: .875rem !important;
+  padding: 5px 0 !important;
+  text-transform: none !important;
+  font-size: 0.875rem !important;
 }
 
-#home div#offcanvas-flip .uk-offcanvas-bar .uk-nav .social-icons
-{
-    display: flex;
-    justify-content: right;
+#home div#offcanvas-flip .uk-offcanvas-bar .uk-nav .social-icons {
+  display: flex;
+  justify-content: right;
 }
 
-.social-icons span a i.fab
-{
-    font-size: 20px !important;
+.social-icons span a i.fab {
+  font-size: 20px !important;
 }
 
 #home .hero-text-box {
-    position: absolute;
-    /* width: 1140px; */
-    top: 150px;
-    left: 150px;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 130px;
+  padding: 10px 30px;
 }
-#home .hero-text-box h1{
-    color: #fff;
+
+#home .hero-text-box h1 {
+  color: #fff;
+  font-weight: 500;
+}
+
+#home .hero-text-box h1 span.name {
+  font-family: "Satisfy", cursive;
+  background: #222;
+}
+
+#home .hero-text-box span.description {
+  color: #fff;
+  font-weight: bold;
+  background: #222;
+}
+
+#home .hero-text-box a{
+  border-color: #fff;
+  color: #fff;
+  border-radius: 5px;
+  margin: 0 auto;
+  font-weight: bold;
+  text-transform: none;
+}
+
+#home .hero-text-box a:hover{
+  background: #fff;
+  border-color: #222;
+  color: #222;
+}
+
+/*Code for About Me section */
+#about_me .uk-container 
+{
+  display: flex;
+  flex-flow: column;
+}
+#about_me .uk-container .row h2 {
+  color: #222;
+  text-align: center;
+  padding: 10px 10px;
+  font-weight: bold;
+}
+
+#about_me .uk-container .row h2::after {
+  display: block;
+  height: 2px;
+  background-color: #222;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-top: 20px;
+}
+
+#about_me .uk-container .profile .about-me_description
+{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+#about_me .uk-container .profile .about-me_description .profile_img
+{
+  width: auto;
+  height: 200px;
+  border: 2px solid #222;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about_me .uk-container .profile .about-me_description .description-header
+{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #616161;
+}
+
+#about_me .uk-container .profile .about-me_description .description{
+  text-align: center;
+  color: #616161;
+  margin-top: 0px;
+}
+
+/* #about_me .uk-container div .skills_stat
+{
+  display: flex;
+  flex-flow: column;
+} */
+
+
+#about_me .uk-container div .skills_stat .skills{
+ line-height: 2.0;
+ display: flex;
+}
+
+#about_me .uk-container div .skills_stat .skills .skill-title{
+  text-align: right;
+  padding-right: 20px;
+}
+.uk-progress::-moz-progress-bar {
+  background-color: #616161 !important;
+}
+
+.uk-progress
+{
+  height: 20px !important;
+  border-radius: 0px !important;
+ 
 }

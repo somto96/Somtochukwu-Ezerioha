@@ -11,8 +11,10 @@
     <script src="assets/js/jquery.fullpage.js"></script>
     <script src="assets/js/scroll.js"></script>
 
+
     <!-- Google font -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
 
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/css/uikit.min.css" />
@@ -59,7 +61,9 @@
                         <li><a href="#about_me">About Me</a></li>
                         <li><a href="#skill_stats">Skill Stats</a></li>
                         <li><a href="#projects">Projects</a></li>
-                        <li><a href="https://drive.google.com/open?id=1NsFkhzhIzCNNjKd0QgU0F_4IAV5XbWKGI8AsYhw0vuY">Resume</a></li>
+                        <li><a href="https://drive.google.com/open?id=1NsFkhzhIzCNNjKd0QgU0F_4IAV5XbWKGI8AsYhw0vuY">Download
+                                Resume</a>
+                        </li>
                         <li>
                             <a class="uk-button uk-button-default uk-width-1-2 uk-margin" href="#hire_me"> Hire Me !</a>
                         </li>
@@ -67,7 +71,8 @@
                         <li class="uk-nav-header">Connect with me!</li>
                         <div class="social-icons ">
                             <span>
-                                <a href="https://www.linkedin.com/in/somtochukwu-ezerioha-03a810121" class="uk-margin-right linked-in">
+                                <a href="https://www.linkedin.com/in/somtochukwu-ezerioha-03a810121"
+                                    class="uk-margin-right linked-in">
                                     <i class="fab fa-linkedin"></i>
                                 </a>
                             </span>
@@ -89,20 +94,137 @@
                 </div>
             </div>
             <div class="hero-text-box">
-                <h1>Hi I'm Somto<br></h1>
+                <h1>Hi, I'm <span class="name">Somto</span><br /></h1>
+                <span class="description">A full-stack web developer</span><br />
+                <a class="uk-button uk-button-default uk-width-auto uk-margin" href="#">
+                    My Work &nbsp;<i class="fas fa-angle-right"></i>
+                </a>
             </div>
 
             <!-- Scroll down button -->
-            <a class="scroll" href="#section04"><span></span></a>
+            <!-- <a class="scroll" href="#about_me"><span></span></a> -->
 
 
 
 
         </section>
-        <!-- <section id="about_me">
-            <h1>Section 2</h1>
+        <section id="about_me">
+            <div class="uk-container">
+                <div class="row">
+                    <h2 class="uk-margin-top section-title">About Me</h2>
+                </div>
+                <div uk-grid>
+                    <div class="row profile uk-width-1-2@l uk-width-auto@m uk-width-expand@s">
+
+                        <div class="about-me_description">
+                            <img class="profile_img" src="assets/img/somto.jpg" alt="Somto Ezerioha">
+                            <p class="description-header"> Who am i?</p>
+                            <p class="description">
+                                I'm a Full-Stack Developer in Lagos, Nigeria.
+                                Currently, I work at Arnergy Solar Limited in Victoria Island, Lagos.
+                                I have a flair for UI design, animations, creating dynamic user experiences and
+                                testing out new technologies and innovative ideas
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row skills_stat uk-width-1-2@l uk-width-auto@m uk-width-auto@s">
+                        <div class="skills row">
+                            <div class="uk-width-1-4 skill-title">
+                                HTML5 (90%)
+                            </div>
+                            <div class="uk-width-3-4 skill-level">
+                                <progress id="js-progressbar-html5" class="uk-progress uk-width-expand" value="90"
+                                    max="100"></progress>
+                            </div>
+
+                        </div>
+                        <div class="skills row">
+                            <div class="uk-width-1-4 skill-title">
+                                CSS 3 (80%)
+                            </div>
+                            <div class="uk-width-3-4 skill-level">
+                                <progress id="js-progressbar-css3" class="uk-progress uk-width-expand" value="80"
+                                    max="100"></progress>
+                            </div>
+
+                        </div>
+
+                        <div class="skills row">
+                            <div class="uk-width-1-4 skill-title">
+                                JavaScript (70%)
+                            </div>
+                            <div class="uk-width-3-4 skill-level">
+                                <progress id="js-progressbar-js" class="uk-progress uk-width-expand" value="70"
+                                    max="100"></progress>
+                            </div>
+
+                        </div>
+
+                        <div class="skills row">
+                            <div class="uk-width-1-4 skill-title">
+                                VueJS (70%)
+                            </div>
+                            <div class="uk-width-3-4 skill-level">
+                                <progress id="js-progressbar-vue" class="uk-progress uk-width-expand" value="70"
+                                    max="100"></progress>
+                            </div>
+
+                        </div>
+
+                        <div class="skills row">
+                            <div class="uk-width-1-4 skill-title">
+                                React (50%)
+                            </div>
+                            <div class="uk-width-3-4 skill-level">
+                                <progress id="js-progressbar-react" class="uk-progress uk-width-expand" value="50"
+                                    max="100"></progress>
+                            </div>
+
+                        </div>
+
+                        <div class="skills row">
+                            <div class="uk-width-1-4 skill-title">
+                                Python (60%)
+                            </div>
+                            <div class="uk-width-3-4 skill-level">
+                                <progress id="js-progressbar-py" class="uk-progress uk-width-expand" value="60"
+                                    max="100"></progress>
+                            </div>
+
+                        </div>
+
+                        <div class="skills row">
+                            <div class="uk-width-1-4 skill-title">
+                                Node.js (50%)
+                            </div>
+                            <div class="uk-width-3-4 skill-level">
+                                <progress id="js-progressbar-node" class="uk-progress uk-width-expand" value="50"
+                                    max="100"></progress>
+                            </div>
+
+                        </div>
+
+                        <div class="skills row">
+                            <div class="uk-width-1-4 skill-title">
+                                UI Design (70%)
+                            </div>
+                            <div class="uk-width-3-4 skill-level">
+                                <progress id="js-progressbar-ui" class="uk-progress uk-width-expand" value="70" max="100">
+                                    UI Design
+                                </progress>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
         </section>
-        <section id="skill_stats">
+        <!-- <section id="skill_stats">
             <h1>Section 3</h1>
         </section>
         <section id="portfolio">
@@ -112,6 +234,8 @@
             <h1>Section 5</h1>
         </section> -->
     </div>
+
+    <script src="assets/js/progressbar.js"></script>
     <script type="text/javascript">
         $('#fullpage').fullpage();
     </script>
