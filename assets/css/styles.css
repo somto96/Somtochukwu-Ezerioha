@@ -1,7 +1,8 @@
-body {
+html, body {
   margin: 0;
   padding: 0;
   font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* General styles for webpage layout (including sections) */
@@ -46,7 +47,7 @@ body {
 }
 
 #fullpage section:nth-child(3) {
-  background: #0ff;
+  background: #222;
 }
 
 #fullpage section:nth-child(4) {
@@ -205,23 +206,16 @@ body {
   display: flex;
   flex-flow: column;
 }
+
 #about_me .uk-container .row h2 {
   color: #222;
   text-align: center;
   padding: 10px 10px;
-  font-weight: bold;
+  /* font-weight: bold; */
+  font-family: "Satisfy", cursive;
 }
 
-#about_me .uk-container .row h2::after {
-  display: block;
-  height: 2px;
-  background-color: #222;
-  content: " ";
-  width: 100px;
-  margin: 0 auto;
-  margin-top: 0px;
-  margin-top: 20px;
-}
+
 
 #about_me .uk-container .profile .about-me_description
 {
@@ -234,13 +228,12 @@ body {
 {
   width: auto;
   height: 200px;
-  border: 2px solid #222;
   border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
 }
 
-#about_me .uk-container .profile .about-me_description .description-header
+#about_me .uk-container .uk-switcher .profile_list .profile .about-me_description .description-header
 {
   text-align: center;
   font-size: 20px;
@@ -248,35 +241,64 @@ body {
   color: #616161;
 }
 
-#about_me .uk-container .profile .about-me_description .description{
+#about_me .uk-container .uk-switcher .profile_list .profile .about-me_description .description{
   text-align: center;
   color: #616161;
   margin-top: 0px;
+  padding: 10px 10px;
 }
 
-/* #about_me .uk-container div .skills_stat
-{
+#about_me .uk-container .uk-switcher .profile_list .profile .about-me_description .description .description-text{
   display: flex;
   flex-flow: column;
-} */
+}
 
-
-#about_me .uk-container div .skills_stat .skills{
- line-height: 2.0;
+#about_me .uk-container .uk-switcher .skills_list .skills_stat .skills{
  display: flex;
 }
 
-#about_me .uk-container div .skills_stat .skills .skill-title{
+#about_me .uk-container .uk-switcher .skills_list .skills_stat .skills .skill-title{
   text-align: right;
   padding-right: 20px;
 }
-.uk-progress::-moz-progress-bar {
+#about_me .uk-container .uk-switcher .skills_list .skills_stat .skills .uk-progress::-moz-progress-bar {
   background-color: #616161 !important;
 }
 
-.uk-progress
+#about_me .uk-container .uk-switcher .skills_list .skills_stat .skills .uk-progress
 {
   height: 20px !important;
   border-radius: 0px !important;
- 
+}
+
+#about_me .uk-container .uk-subnav-pill .uk-active a {
+  background-color: #616161 !important;
+  color: #fff;
+}
+
+
+/* CODE FOR PROJECT SECTION */
+
+#projects .uk-container .row h2 {
+  color: #fff;
+  text-align: center;
+  padding: 10px 10px;
+  /* font-weight: bold; */
+  font-family: "Satisfy", cursive;
+}
+
+
+#projects .uk-container div#project-card div div#card-list .uk-card-body a{
+  border: 1px solid #222;
+  color: #222;
+  border-radius: 5px;
+  margin: 0 auto;
+  font-weight: bold;
+  text-transform: none;
+  justify-content: right;
+}
+
+#projects .uk-container div#project-card div div#card-list .uk-card-body span{
+  display: flex;
+  flex-flow: row;
 }

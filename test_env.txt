@@ -1,0 +1,111 @@
+  <div uk-grid>
+    <div class="row">
+                                <h2 class="uk-margin-top section-title">About Me</h2>
+                            </div>
+                    <div class="row profile uk-width-expand@l uk-width-expand@m uk-width-expand@s">
+
+                        <div class="about-me_description">
+                            <img class="profile_img" src="assets/img/somto.jpg" alt="Somto Ezerioha">
+                            <p class="description-header"> Who am i?</p>
+                            <p class="description">
+                                I'm a Full-Stack Developer in Lagos, Nigeria.
+                                Currently, I work at Arnergy Solar Limited in Victoria Island, Lagos.
+                                I have a flair for UI design, animations, creating dynamic user experiences and
+                                testing out new technologies and innovative ideas
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row skills_stat uk-width-1-2@l uk-width-auto@m uk-width-expand@s">
+                        <div class="skills row">
+                            <div class="uk-width-1-4 skill-title">
+                                HTML5 (90%)
+                            </div>
+                            <div class="uk-width-3-4 skill-level">
+                                <progress id="js-progressbar-html5" class="uk-progress uk-width-expand" value="90"
+                                    max="100"></progress>
+                            </div>
+
+                        </div>
+                        <div class="skills row">
+                            <div class="uk-width-1-4 skill-title">
+                                CSS 3 (80%)
+                            </div>
+                            <div class="uk-width-3-4 skill-level">
+                                <progress id="js-progressbar-css3" class="uk-progress uk-width-expand" value="80"
+                                    max="100"></progress>
+                            </div>
+
+                        </div>
+
+                        <div class="skills row">
+                            <div class="uk-width-1-4 skill-title">
+                                JavaScript (70%)
+                            </div>
+                            <div class="uk-width-3-4 skill-level">
+                                <progress id="js-progressbar-js" class="uk-progress uk-width-expand" value="70"
+                                    max="100"></progress>
+                            </div>
+
+                        </div>
+
+                        <div class="skills row">
+                            <div class="uk-width-1-4 skill-title">
+                                VueJS (70%)
+                            </div>
+                            <div class="uk-width-3-4 skill-level">
+                                <progress id="js-progressbar-vue" class="uk-progress uk-width-expand" value="70"
+                                    max="100"></progress>
+                            </div>
+
+                        </div>
+
+                        <div class="skills row">
+                            <div class="uk-width-1-4 skill-title">
+                                React (50%)
+                            </div>
+                            <div class="uk-width-3-4 skill-level">
+                                <progress id="js-progressbar-react" class="uk-progress uk-width-expand" value="50"
+                                    max="100"></progress>
+                            </div>
+
+                        </div>
+
+                        <div class="skills row">
+                            <div class="uk-width-1-4 skill-title">
+                                Python (60%)
+                            </div>
+                            <div class="uk-width-3-4 skill-level">
+                                <progress id="js-progressbar-py" class="uk-progress uk-width-expand" value="60"
+                                    max="100"></progress>
+                            </div>
+
+                        </div>
+
+                        <div class="skills row">
+                            <div class="uk-width-1-4 skill-title">
+                                Node.js (50%)
+                            </div>
+                            <div class="uk-width-3-4 skill-level">
+                                <progress id="js-progressbar-node" class="uk-progress uk-width-expand" value="50"
+                                    max="100"></progress>
+                            </div>
+
+                        </div>
+
+                        <div class="skills row">
+                            <div class="uk-width-1-4 skill-title">
+                                UI Design (70%)
+                            </div>
+                            <div class="uk-width-3-4 skill-level">
+                                <progress id="js-progressbar-ui" class="uk-progress uk-width-expand" value="70"
+                                    max="100">
+                                    UI Design
+                                </progress>
+                            </div>
+
+                    
+                        </div>
+
+                    </div>
+                </div>
