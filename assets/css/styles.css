@@ -35,7 +35,7 @@ html, body {
 } */
 
 #fullpage section:nth-child(1) {
-  background-image: url("../img/macbook_pro.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../img/macbook_pro.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -62,6 +62,8 @@ html, body {
   background: #222;
   height: 40vh;
   color: #fff;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
 }
 
 
@@ -178,6 +180,7 @@ html, body {
   align-items: center;
   margin-top: 130px;
   padding: 10px 30px;
+  
 }
 
 #home .hero-text-box h1 {
@@ -187,13 +190,11 @@ html, body {
 
 #home .hero-text-box h1 span.name {
   font-family: "Satisfy", cursive;
-  background: #222;
 }
 
 #home .hero-text-box span.description {
   color: #fff;
-  font-weight: bold;
-  background: #222;
+  font-size: 20px;
 }
 
 #home .hero-text-box a{
@@ -343,14 +344,14 @@ html, body {
   padding-bottom:30px;
 }
 
-#hire_me .uk-container div#contact-me form a{
+#hire_me .uk-container div#contact-me form input.uk-button{
   border-color: #222;
   color: #222;
   border-radius: 5px;
   text-transform: none;
 }
 
-#hire_me .uk-container div#contact-me form a:hover{
+#hire_me .uk-container div#contact-me form input.uk-button:hover{
   border-color: #fff;
   background: #222;
   color: #fff;
@@ -366,3 +367,33 @@ html, body {
   font-family: "Satisfy", cursive;
 }
 
+#footer .uk-container .footer_social-icons span a.icon{
+  color: #fff;
+}
+
+#footer .uk-container div.floating-btn{
+  bottom: 50px;
+}
+
+#footer .uk-container div.floating-btn a#target{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  padding: 15px 10px;
+  margin: 20px 0px;
+  border:2px solid #616161;
+  color: #fff;
+  background: #616161;
+  float: right;
+}
+
+#footer .uk-container div a#target:hover{
+  background: #797979;
+}
+
+#footer .uk-container div.footnote {
+  color: #fff;
+  font-size: 10px;
+  padding: 10px 30px;
+  margin-top: 40px;
+}

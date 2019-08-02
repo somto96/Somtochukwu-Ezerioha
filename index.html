@@ -13,6 +13,7 @@
 
 
 
+
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
@@ -34,6 +35,7 @@
 <body>
     <div id="fullpage">
         <section id="home">
+
             <nav class="uk-navbar-transparent " uk-navbar>
                 <div class="uk-navbar-left">
                     <ul class="uk-navbar-nav">
@@ -54,6 +56,14 @@
                 </div>
             </nav>
 
+            <div class="hero-text-box">
+                <h1>Hi, I'm <span class="name">Somto</span><br /></h1>
+                <span class="description">A front-end web developer</span><br />
+                <a class="uk-button uk-button-default uk-width-auto uk-margin" href="#about_me">
+                    My Work &nbsp;<i class="fas fa-angle-right"></i>
+                </a>
+            </div>
+            <!-- <div ></div> -->
             <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
                 <div class="uk-offcanvas-bar">
 
@@ -100,13 +110,7 @@
 
                 </div>
             </div>
-            <div class="hero-text-box">
-                <h1>Hi, I'm <span class="name">Somto</span><br /></h1>
-                <span class="description">A full-stack web developer</span><br />
-                <a class="uk-button uk-button-default uk-width-auto uk-margin" href="#">
-                    My Work &nbsp;<i class="fas fa-angle-right"></i>
-                </a>
-            </div>
+
 
             <!-- Scroll down button -->
             <!-- <a class="scroll" href="#about_me"><span></span></a> -->
@@ -118,10 +122,10 @@
         <section id="about_me">
             <div class="uk-container uk-margin-bottom">
 
-                <ul class="uk-subnav uk-flex-center uk-subnav-pill" uk-switcher="animation: uk-animation-fade">
+                <ul class="uk-subnav uk-flex-center uk-subnav-pill" uk-switcher="animation: uk-animation-fade"
+                    uk-scrollspy="cls:uk-animation-fade; repeat: true">
                     <li><a href="#">Profile</a></li>
                     <li><a href="#">Tech Skills</a></li>
-
                 </ul>
 
                 <ul class="uk-switcher uk-margin">
@@ -134,7 +138,7 @@
                                 <img class="profile_img" src="assets/img/somto.jpg" alt="Somto Ezerioha">
                                 <p class="description-header"> Who am i?</p>
                                 <p class="description">
-                                    <span class="description-text">I'm a Full-Stack Developer in Lagos, Nigeria.</span>
+                                    <span class="description-text">I'm a Front-End Developer in Lagos, Nigeria.</span>
                                     <span class="description-text">I have a flair for UI design, animations, creating
                                         dynamic user experiences and</span>
                                     <span class="description-text">testing out new technologies and innovative
@@ -257,7 +261,8 @@
                 <div class="row uk-margin-top">
                     <h2 class=" project-title uk-margin">Projects</h2>
                 </div>
-                <div id="project-cards" class="uk-child-width-1-3@m uk-margin-bottom" uk-grid>
+                <div id="project-cards" class="uk-child-width-1-3@m uk-margin-bottom" uk-grid
+                    uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500;">
                     <div>
                         <div class="uk-card uk-card-default" id="card-list">
                             <div class="uk-card-media-top">
@@ -313,13 +318,15 @@
         </section>
         <section id="hire_me">
             <div class="uk-container">
-                <div class="row uk-margin-top" id="contact-me">
+                <div class="row uk-margin-top" id="contact-me"
+                    uk-scrollspy="target: .contact-form; cls: uk-animation-fade; delay: 500;">
                     <h2 class=" contact-title uk-margin">Contact me</h2>
-                    <form class="contact-form uk-text-center">
+                    <form class="contact-form uk-text-center" uk-scrollspy-class="uk-animation-slide-right"
+                        method="POST" action="https://formspree.io/motivatedsomto@gmail.com">
                         <div class="uk-margin">
                             <div class="uk-inline">
                                 <span class="uk-form-icon" uk-icon="icon: user"></span>
-                                <input class="uk-input" type="text" placeholder="Fullname" name="name" required>
+                                <input class="uk-input" type="text" placeholder="Fullname" name="fullname" required>
                             </div>
                         </div>
                         <div class="uk-margin">
@@ -336,8 +343,8 @@
                                 </div>
                             </div>
                         </div>
-                        <a class="uk-button uk-button-default uk-width-auto uk-margin-bottom" href="#">Submit &nbsp;<i
-                                class="fab fa-telegram-plane "></i></a>
+                        <input class="uk-button uk-button-default uk-width-auto uk-margin-bottom" type="submit"
+                            value="Submit" href="#">
                     </form>
                 </div>
             </div>
@@ -349,38 +356,53 @@
                 <div class="row">
                     <h3 class=" footer-title uk-margin">Let's connect</h3>
                 </div>
-                <div class="social-icons ">
+                <div class="footer_social-icons">
                     <span>
-                        <a href="#" class="uk-margin-right facebook">
+                        <a href="#" class="uk-margin-right icon">
                             <i class="fab fa-facebook fa-2x"></i>
                         </a>
                     </span>
                     <span>
                         <a href="https://www.linkedin.com/in/somtochukwu-ezerioha-03a810121"
-                            class="uk-margin-right linked-in">
-                            <i class="fab fa-linkedin fa2x"></i>
+                            class="uk-margin-right icon">
+                            <i class="fab fa-linkedin fa-2x"></i>
                         </a>
                     </span>
                     <span>
-                        <a href="https://github.com/somto96" class="uk-margin-right github">
-                            <i class="fab fa-github fab-3x"></i>
+                        <a href="https://github.com/somto96" class="uk-margin-right icon">
+                            <i class="fab fa-github fa-2x"></i>
                         </a>
                     </span>
                     <span>
-                        <a href="https://medium.com/@motivatedsomto" class="medium">
-                            <i class="fab fa-medium fab-3x"></i>
+                        <a href="https://medium.com/@motivatedsomto" class="icon">
+                            <i class="fab fa-medium fa-2x"></i>
                         </a>
                     </span>
                 </div>
-
+                <div class=" floating-btn">
+                    <a id="target" class="uk-button uk-button-default uk-text-center" href="#top" uk-scroll=""><i
+                            class="fas fa-angle-double-up fa-2x"></i></a>
+                </div>
+                <div class="footnote">
+                    SOMTOCHUKWU EZERIOHA
+                    ©2019
+                </div>
             </div>
         </section>
     </div>
 
     <script src="assets/js/progressbar.js"></script>
+    <!-- <script src="assets/js/index.js"></script> -->
     <!-- <script type="text/javascript">
         $('#home').fullpage();
     </script> -->
+    <script type="text/javascript">
+        $("form").submit(function (event) {
+            event.preventDefault();
+            $('.uk-input').val('');
+            $('.uk-textarea').val('');
+        });
+    </script>
 </body>
 
 </html>
