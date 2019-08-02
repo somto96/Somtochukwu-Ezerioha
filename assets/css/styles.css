@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   font-family: "Raleway", sans-serif;
@@ -35,7 +36,7 @@ html, body {
 } */
 
 #fullpage section:nth-child(1) {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../img/macbook_pro.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/macbook_pro.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -58,17 +59,14 @@ html, body {
   background: #fff;
 }
 
-#fullpage #footer{
+#fullpage #footer {
   background: #222;
   height: 40vh;
   color: #fff;
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
 }
 
-
 /* Code for home section */
-#home{
+#home {
   height: 100vh;
 }
 
@@ -180,7 +178,6 @@ html, body {
   align-items: center;
   margin-top: 130px;
   padding: 10px 30px;
-  
 }
 
 #home .hero-text-box h1 {
@@ -197,7 +194,7 @@ html, body {
   font-size: 20px;
 }
 
-#home .hero-text-box a{
+#home .hero-text-box a {
   border-color: #fff;
   color: #fff;
   border-radius: 5px;
@@ -206,16 +203,14 @@ html, body {
   text-transform: none;
 }
 
-#home .hero-text-box a:hover{
+#home .hero-text-box a:hover {
   background: #fff;
   border-color: #222;
   color: #222;
 }
 
-
 /*CODE FOR ABOUT ME SECTION*/
-#about_me .uk-container 
-{
+#about_me .uk-container {
   display: flex;
   flex-flow: column;
 }
@@ -227,15 +222,13 @@ html, body {
   font-family: "Satisfy", cursive;
 }
 
-#about_me .uk-container .profile .about-me_description
-{
+#about_me .uk-container .profile .about-me_description {
   display: flex;
   flex-flow: column;
   justify-content: center;
 }
 
-#about_me .uk-container .profile .about-me_description .profile_img
-{
+#about_me .uk-container .profile .about-me_description .profile_img {
   width: auto;
   height: 200px;
   border-radius: 5px;
@@ -243,31 +236,30 @@ html, body {
   margin-right: auto;
 }
 
-#about_me .uk-container .uk-switcher .profile_list .profile .about-me_description .description-header
-{
+#about_me .uk-container .uk-switcher .profile_list .profile .about-me_description .description-header {
   text-align: center;
   font-size: 20px;
   font-weight: bold;
   color: #616161;
 }
 
-#about_me .uk-container .uk-switcher .profile_list .profile .about-me_description .description{
+#about_me .uk-container .uk-switcher .profile_list .profile .about-me_description .description {
   text-align: center;
   color: #616161;
   margin-top: 0px;
   padding: 10px 10px;
 }
 
-#about_me .uk-container .uk-switcher .profile_list .profile .about-me_description .description .description-text{
+#about_me .uk-container .uk-switcher .profile_list .profile .about-me_description .description .description-text {
   display: flex;
   flex-flow: column;
 }
 
-#about_me .uk-container .uk-switcher .skills_list .skills_stat .skills{
- display: flex;
+#about_me .uk-container .uk-switcher .skills_list .skills_stat .skills {
+  display: flex;
 }
 
-#about_me .uk-container .uk-switcher .skills_list .skills_stat .skills .skill-title{
+#about_me .uk-container .uk-switcher .skills_list .skills_stat .skills .skill-title {
   text-align: right;
   padding-right: 20px;
 }
@@ -275,13 +267,12 @@ html, body {
   background-color: #616161 !important;
 }
 
-#about_me .uk-container .uk-switcher .skills_list .skills_stat .skills .uk-progress
-{
+#about_me .uk-container .uk-switcher .skills_list .skills_stat .skills .uk-progress {
   height: 20px !important;
   border-radius: 0px !important;
 }
 
-#about_me .uk-container .uk-subnav-pill{
+#about_me .uk-container .uk-subnav-pill {
   padding-top: 50px;
 }
 
@@ -289,7 +280,6 @@ html, body {
   background-color: #222 !important;
   color: #fff;
 }
-
 
 /* CODE FOR PROJECT SECTION */
 
@@ -302,34 +292,36 @@ html, body {
   font-family: "Satisfy", cursive;
 }
 
-#projects .uk-container div#project-cards{
+#projects .uk-container div#project-cards {
   height: auto;
   margin-bottom: 20px;
   padding-bottom: 70px;
 }
 
-#projects .uk-container div#project-cards div div#card-list .uk-card-body a{
+#projects .uk-container div#project-cards div div#card-list .uk-card-body a {
   border-color: #222;
   color: #222;
   border-radius: 5px;
   text-transform: none;
 }
 
-#projects .uk-container div#project-cards div div#card-list .uk-card-body a:hover{
+#projects .uk-container div#project-cards div div#card-list .uk-card-body a:hover {
   border-color: #fff;
   background: #222;
   color: #fff;
   font-weight: bold;
 }
 
-#projects .uk-container div#project-cards div div#card-list .uk-card-body h3{
+#projects .uk-container div#project-cards div div#card-list .uk-card-body h3 {
   font-family: "Satisfy", cursive;
 }
 
-#projects .uk-container div#project-cards div div#card-list .uk-card-body span{
+#projects .uk-container div#project-cards div div#card-list .uk-card-body span {
   background: #222;
+  font-size: 10px;
+  padding: 6px 12px;
+  font-weight: bold;
 }
-
 
 /* CODES FOR HIRE_ME SECTION */
 #hire_me .uk-container .row h2 {
@@ -339,25 +331,23 @@ html, body {
   font-family: "Satisfy", cursive;
 }
 
-#hire_me .uk-container div#contact-me form
-{
-  padding-bottom:30px;
+#hire_me .uk-container div#contact-me form {
+  padding-bottom: 30px;
 }
 
-#hire_me .uk-container div#contact-me form input.uk-button{
+#hire_me .uk-container div#contact-me form input.uk-button {
   border-color: #222;
   color: #222;
   border-radius: 5px;
   text-transform: none;
 }
 
-#hire_me .uk-container div#contact-me form input.uk-button:hover{
+#hire_me .uk-container div#contact-me form input.uk-button:hover {
   border-color: #fff;
   background: #222;
   color: #fff;
   font-weight: bold;
 }
-
 
 /* CODE FOR FOOTER SECTION */
 #footer .uk-container .row h3 {
@@ -367,27 +357,27 @@ html, body {
   font-family: "Satisfy", cursive;
 }
 
-#footer .uk-container .footer_social-icons span a.icon{
+#footer .uk-container .footer_social-icons span a.icon {
   color: #fff;
 }
 
-#footer .uk-container div.floating-btn{
+#footer .uk-container div.floating-btn {
   bottom: 50px;
 }
 
-#footer .uk-container div.floating-btn a#target{
+#footer .uk-container div.floating-btn a#target {
   height: 60px;
   width: 60px;
   border-radius: 50%;
   padding: 15px 10px;
   margin: 20px 0px;
-  border:2px solid #616161;
+  border: 2px solid #616161;
   color: #fff;
   background: #616161;
   float: right;
 }
 
-#footer .uk-container div a#target:hover{
+#footer .uk-container div a#target:hover {
   background: #797979;
 }
 
