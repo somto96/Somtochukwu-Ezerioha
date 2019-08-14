@@ -55,14 +55,18 @@ body {
   background-attachment: fixed;
 }
 
-#fullpage section:nth-child(4) {
-  background: #fff;
+#fullpage section:nth-child(4)#hire_me {
+  background: #fff;;
+  /* margin-bottom: 0 !important */
 }
-
+/* #fullpage #hire_me{
+ 
+} */
 #fullpage #footer {
   background: #222;
   height: 40vh;
   color: #fff;
+ 
 }
 
 /* Code for home section */
@@ -324,29 +328,40 @@ body {
 }
 
 /* CODES FOR HIRE_ME SECTION */
-#hire_me .uk-container .row h2 {
+#hire_me .uk-container .row h3.hire_me {
   color: #222;
   text-align: center;
   padding: 30px 0px 10px 0px;
   font-family: "Satisfy", cursive;
 }
 
-#hire_me .uk-container div#contact-me form {
+/* #hire_me .uk-container div#contact-me form {
   padding-bottom: 30px;
-}
+} */
 
-#hire_me .uk-container div#contact-me form input.uk-button {
+#hire_me .uk-container form div input.uk-button {
   border-color: #222;
   color: #222;
   border-radius: 5px;
   text-transform: none;
 }
 
-#hire_me .uk-container div#contact-me form input.uk-button:hover {
+#hire_me .uk-container form input.uk-button:hover {
   border-color: #fff;
   background: #222;
   color: #fff;
   font-weight: bold;
+}
+
+#hire_me .uk-container form div #lnk100{
+  color: #222!important;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+#hire_me .uk-container form div #lnk100:hover{
+  color: #222;
+  text-decoration: none;
 }
 
 /* CODE FOR FOOTER SECTION */

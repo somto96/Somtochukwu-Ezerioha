@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="assets/js/jquery.fullpage.js"></script>
-    <script src="assets/js/scroll.js"></script>
 
 
 
@@ -30,6 +29,8 @@
 
 
 
+
+
 </head>
 
 <body>
@@ -38,11 +39,11 @@
 
             <nav class="uk-navbar-transparent " uk-navbar>
                 <div class="uk-navbar-left">
-                    <ul class="uk-navbar-nav">
+                    <!-- <ul class="uk-navbar-nav">
                         <li class="brand">
                             Somtochukwu Ezerioha
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="uk-navbar-right">
                     <a href="#" class="uk-navbar-toggle" uk-toggle="target: #offcanvas-flip">
@@ -57,7 +58,7 @@
             </nav>
 
             <div class="hero-text-box">
-                <h1>Hi, I'm <span class="name">Somto</span><br /></h1>
+                <h1>Hi, I'm <span class="name">Somtochukwu Ezerioha</span>.<br /></h1>
                 <span class="description">A front-end web developer</span><br />
                 <a class="uk-button uk-button-default uk-width-auto uk-margin" href="#about_me">
                     My Work &nbsp;<i class="fas fa-angle-right"></i>
@@ -73,18 +74,20 @@
                         <li class="uk-nav-header">MENU</li>
                         <li><a href="#about_me">About Me</a></li>
                         <li><a href="#projects">Projects</a></li>
-                        <li><a href="https://drive.google.com/file/d/17eSWACIS5iR9gOHwn3ZSOcPz7ol7WtoI/view?usp=sharing">Download
+                        <li><a
+                                href="https://drive.google.com/file/d/17eSWACIS5iR9gOHwn3ZSOcPz7ol7WtoI/view?usp=sharing">Download
                                 Resume</a>
                         </li>
                         <li>
-                            <a class="uk-button uk-button-default uk-width-1-2 uk-margin" href="mailto:motivatedsomto@gmail.com"> Hire Me !</a>
+                            <a class="uk-button uk-button-default uk-width-1-2 uk-margin"
+                                href="#hire_me"> Hire Me !</a>
                         </li>
                         <li class="uk-nav-divider"></li>
                         <li class="uk-nav-header">Connect with me!</li>
                         <div class="social-icons ">
                             <span>
-                                <a href="mailto:motivatedsomto@gmail.com" class="uk-margin-right facebook">
-                                    <i class="far fa-envelope fa-2x" style="font-size: 20px;"></i>
+                                <a href="https://www.facebook.com/max.stone.505" class="uk-margin-right facebook">
+                                    <i class="fab fa-facebook" ></i>
                                 </a>
                             </span>
                             <span>
@@ -316,15 +319,100 @@
             </div>
 
         </section>
+        <section id="hire_me">
+            <div class="uk-width-medium-1-2 uk-container uk-text-center uk-margin">
+                <div class="row uk-margin">
+                    <h3 class=" hire_me uk-margin">Let's connect</h3>
+                </div>
+                <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+                    <div class="uk-margin">
+                        <div class="uk-inline">
+                            <span class="uk-form-icon" uk-icon="icon: user"></span>
+                            <input class="uk-input" name="Name" type="text" placeholder="Fullname">
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <div class="uk-inline">
+                            <span class="uk-form-icon" uk-icon="icon:  receiver"></span>
+                            <input class="uk-input" name="PhoneNumber" type="text" placeholder="Phone Number">
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <div class="uk-inline">
+                            <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                            <input class="uk-input" name="FromEmailAddress" type="text" placeholder="Email Address">
+                        </div>
+                    </div>
+                    <div class="uk-margin">
+                        <textarea  name="Comments" cols="36" rows="7" placeholder="Comments/Offers..."></textarea>
+                    </div>
+                    <div class="uk-margin">
+                        <input class="uk-button uk-button-default uk-width-small uk-margin" name="skip_Submit"
+                            type="submit" value="Submit">
+                        <script src="https://www.100forms.com/js/FORMKEY:5BAWAJN98YNE" type="text/javascript"></script>
+                    </div>
+                    <div style="float:right; color: #222!important; font-size: 10px;"><a href="https://www.100forms.com"
+                            id="lnk100" title="form to email">form
+                            to email</a>
+                    </div>
+
+
+                    <!-- <input  /> -->
+                    <!-- 
+                        <table style="width:550px;border:0;" cellpadding="8" cellspacing="0">
+                            <tr>
+                                <td>
+                                    <label for="Name">Name*:</label>
+                                </td>
+                                <td>
+                                    <input name="Name" type="text" maxlength="60" style="width:250px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="PhoneNumber">Phone number:</label>
+                                </td>
+                                <td>
+                                    <input name="PhoneNumber" type="text" maxlength="43" style="width:250px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="FromEmailAddress">Email address*:</label>
+                                </td>
+                                <td>
+                                    <input name="FromEmailAddress" type="text" maxlength="90" style="width:250px;" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="Comments">Comments*:</label>
+                                </td>
+                                <td>
+                                    <textarea name="Comments" rows="7" cols="40" style="width:350px;"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    * - required fields
+                                </td>
+                                <td>
+                                   
+                                   
+                                </td>
+                            </tr>
+                        </table> -->
+                </form>
+
+            </div>
+
+        </section>
         <section id="footer">
             <div class="uk-container uk-text-center">
-                <div class="row">
-                    <h3 class=" footer-title uk-margin">Let's connect</h3>
-                </div>
-                <div class="footer_social-icons">
+                <div class="footer_social-icons uk-margin-top">
                     <span>
-                        <a href="mailto:motivatedsomto@gmail.com" class="uk-margin-right icon">
-                            <i class="far fa-envelope fa-2x" style="font-size: 35px;"></i>
+                        <a href="https://www.facebook.com/max.stone.505" class="uk-margin-right icon">
+                            <i class="fab fa-facebook fa-2x" ></i>
                         </a>
                     </span>
                     <span>
@@ -358,6 +446,9 @@
     </div>
 
     <script src="assets/js/progressbar.js"></script>
+    <script src="assets/js/form.js"></script>
+    <!-- 100Forms -->
+    <!-- <script src="https://www.100forms.com/js/FORMKEY:5BAWAJN98YNE" type="text/javascript"></script> -->
     <!-- <script src="assets/js/index.js"></script> -->
     <!-- <script type="text/javascript">
         $('#home').fullpage();
