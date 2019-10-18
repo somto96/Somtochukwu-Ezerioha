@@ -243,6 +243,7 @@ body {
 #about_me .uk-container .uk-switcher .profile_list .profile .about-me_description .description-header {
   text-align: center;
   font-size: 20px;
+  font-family:'Quicksand', sans-serif;
   font-weight: bold;
   color: #616161;
 }
@@ -251,7 +252,7 @@ body {
   text-align: center;
   color: #616161;
   margin-top: 0px;
-  padding: 10px 10px;
+  padding: 5px 10px;
 }
 
 #about_me .uk-container .uk-switcher .profile_list .profile .about-me_description .description .description-text {
